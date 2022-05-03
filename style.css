@@ -1,0 +1,48 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 51%);
+    --Grayish-blue: hsl(180, 2%, 8%);
+    --Dark-blue: hsl(123, 100%, 50%);
+}
+
+body {
+    background: var(--Light-gray);
+    font-family: "Outfit";
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    margin-top: 6% ;
+    height: 50vh;
+    width: 50vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: var(--White);
+    border-radius: 10px;
+    width: 24vw;
+    padding: 20px;
+    display: none;
+}
+
+.tempMax{
+    color: rgb(199, 6, 6);
+}
+.tempMin{
+    color: rgb(10, 10, 209);
+}
+.min-max{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.search{
+    display: flex;
+    gap: 1rem;
+}
