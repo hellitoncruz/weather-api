@@ -83,6 +83,10 @@ input::placeholder{
     flex-direction: column;
     text-align: center;
     border-radius: 5px ;
+<<<<<<< HEAD
+=======
+    gap: 1rem;
+>>>>>>> master
 
     background: rgba(12, 10, 10, 0.116);
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.6);
@@ -137,6 +141,7 @@ input::placeholder{
 
 /* DESCRIPTION */
 .description-txt{
+<<<<<<< HEAD
     font-size: 2rem;
 }
 
@@ -157,4 +162,7 @@ input::placeholder{
     .search{
         margin-bottom: 2rem;
     }
+=======
+    font-size: 1.7rem;
+>>>>>>> master
 }
