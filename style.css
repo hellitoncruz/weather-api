@@ -3,37 +3,130 @@
     --Light-gray: hsl(0, 0%, 51%);
     --Grayish-blue: hsl(180, 2%, 8%);
     --Dark-blue: hsl(123, 100%, 50%);
+    
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background: var(--Light-gray);
-    font-family: "Outfit";
-    justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(180deg, #26b491 60%, #000000 30%);
+    background-size: 200% 200%;
+    height:100vh;
+    width:100vw;
 }
 
+#title-txt{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid rgb(15, 15, 15);
+    background-color: transparent;
+    width: 15rem;
+}
+textarea:focus, input:focus{
+    outline: none;
+    width: 20rem;
+}
+input{
+    font-size: 1.2rem;
+}
+input::placeholder{
+    padding-left: 2px;
+    color: black;
+    
+}
+
+.search{
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+
+#search_btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: .5rem;
+    bottom: .3rem
+
+}
+#search_btn img{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
 .card {
-    margin-top: 6% ;
-    height: 50vh;
+    
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-top: 3%;
+    height: 60vh;
     width: 50vw;
     justify-content: center;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: var(--White);
-    border-radius: 10px;
-    width: 24vw;
-    padding: 20px;
+    border-radius: 5px ;
+    gap: 1rem;
+
+    background: rgba(12, 10, 10, 0.116);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.6);
+    
     display: none;
 }
 
-.tempMax{
-    color: rgb(199, 6, 6);
+.city_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
 }
-.tempMin{
-    color: rgb(10, 10, 209);
+.city_name{
+    display: flex;
+    font-size: 2.2rem;
+}
+
+#greeting, .city_name {
+    font-weight: 400;
+}
+#greeting{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* TEMPERATURAS */
+.temp-txt{
+    font-size: 3rem;
+}
+.temp-txt, .tempMin-txt, .tempMax-txt {
+    font-weight: 600;
+}
+.tempMin-txt, .tempMax-txt{
+    font-size: 1.5rem;
+}
+.tempMax-txt{
+    color: rgb(199, 6, 6);
+    
+}
+.tempMin-txt{
+    color: #061AD0;
 }
 .min-max{
     display: flex;
@@ -42,7 +135,7 @@ body {
     gap: 4rem;
 }
 
-.search{
-    display: flex;
-    gap: 1rem;
+/* DESCRIPTION */
+.description-txt{
+    font-size: 1.7rem;
 }
