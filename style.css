@@ -77,12 +77,16 @@ input::placeholder{
     margin-top: 3%;
     height: 60vh;
     width: 50vw;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     border-radius: 5px ;
+<<<<<<< HEAD
+=======
     gap: 1rem;
+>>>>>>> master
 
     background: rgba(12, 10, 10, 0.116);
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.6);
@@ -132,10 +136,33 @@ input::placeholder{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 4rem;
+    gap: 10rem;
 }
 
 /* DESCRIPTION */
 .description-txt{
+<<<<<<< HEAD
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        width: 300px;
+        height: 450px;
+    }
+    .city_img {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    #title-txt{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    .search{
+        margin-bottom: 2rem;
+    }
+=======
     font-size: 1.7rem;
+>>>>>>> master
 }
